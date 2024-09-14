@@ -138,7 +138,7 @@ python legged_gym/scripts/train.py --task=anymal_c_flat --num_envs=64 --headless
 ~~~
 
 
-# 4 
+# 4 自定义机器人进行配置
 
 1.每个环境由一个env文件`legged_robot.py`和一个配置文件`legged_robot_config.py`。
 2.`env`和`config`类都使用继承base_config和base_task。
