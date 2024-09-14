@@ -16,11 +16,11 @@ conda create -n rl python=3.8
 conda activate rl
 
 ## 2.2 安装torch和torchvision
-pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 ## 2.3 安装setuptools
 ## 运行pip install -e . 需要setuptools>=64.0.1
-pip3 install setuptools==64.0.1
+pip install setuptools==64.0.1
 
 # 3 拉取源码
 ## 3.1 本人使用的下面仓库
@@ -43,7 +43,7 @@ Isaacgym、rsl_rl中setup.py要求的torch和torchvision都屏蔽掉, 直接注�
 # 6 安装rsl_rl==v1.0.2
 git clone https://mirror.ghproxy.com/https://github.com/leggedrobotics/rsl_rl.git -b v1.0.2
 
-## 本人仓库自带rsl_rl，不用执行上面下载代码
+## 本人仓库自带rsl_rl，不用执行上面的下载代码
 cd rsl_rl && pip install -v -e .
 # ./miniconda3/envs/tv/lib/python3.8/site-packages/rsl-rl.egg-link
 
@@ -51,7 +51,7 @@ cd rsl_rl && pip install -v -e .
 cd isaacgym/python
 pip install -v -e .
 
-# 8 下载legged_gym
+# 8 安装legged_gym
 pip install -v -e .
 ## 下载的legged_gym仓库源码就执行下面
 cd legged_gym && pip install -v -e .
